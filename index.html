@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neon Soundboard — Play 8 Sounds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card" role="application" aria-label="Neon Soundboard">
+    <div class="blob one" aria-hidden></div>
+    <div class="blob two" aria-hidden></div>
+
+    <header>
+      <div class="logo">🔊</div>
+      <div>
+        <h1>Neon Soundboard</h1>
+        <p class="lead">Play,Pause,Enjoy.</p>
+      </div>
+
+      <div class="controls" aria-hidden>
+        <label style="font-size:12px;color:var(--muted);">Volume</label>
+        <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+        <button id="mute" title="Mute / Unmute">🔇</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid" id="grid">
+
+        <div class="pad" data-sound="dog_bark" tabindex="0">
+          <div class="emoji">🐶</div>
+          <h3>Dog Bark</h3>
+          <p>Friendly pupper alert</p>
+        </div>
+
+        <div class="pad" data-sound="clap" tabindex="0">
+          <div class="emoji">👏</div>
+          <h3>Clap</h3>
+          <p>Audience applause</p>
+        </div>
+
+        <div class="pad" data-sound="drums" tabindex="0">
+          <div class="emoji">🥁</div>
+          <h3>Drums</h3>
+          <p>Short drum fill</p>
+        </div>
+
+        <div class="pad" data-sound="amongus_imposter" tabindex="0">
+          <div class="emoji">👾</div>
+          <h3>Among Us — Imposter</h3>
+          <p>Suspense ping</p>
+        </div>
+
+        <div class="pad" data-sound="windows_error" tabindex="0">
+          <div class="emoji">💻</div>
+          <h3>Windows Error</h3>
+          <p>Retro system beep</p>
+        </div>
+
+        <div class="pad" data-sound="laugh" tabindex="0">
+          <div class="emoji">😂</div>
+          <h3>Laugh</h3>
+          <p>Short chuckle</p>
+        </div>
+
+        <div class="pad" data-sound="pirates_of_caribbean" tabindex="0">
+          <div class="emoji">☠️</div>
+          <h3>Pirates of the Caribbean</h3>
+          <p>Iconic motif hit</p>
+        </div>
+
+        <div class="pad" data-sound="bell" tabindex="0">
+          <div class="emoji">🔔</div>
+          <h3>Bell</h3>
+          <p>Clear chime</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
